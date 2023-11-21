@@ -18,7 +18,7 @@ def main():
         x = tmr % 1600
         screen.blit(bg_imgs[0], [-x, 0])#練習4
         screen.blit(bg_imgs[1], [1600-x,0])#練習6
-        screen.blit(kk_imgs[tmr%2], [300,200])#練習5
+        screen.blit(kk_imgs[tmr%100//50], [300,200])#練習5&演習課題1(滑らか)
         pg.display.update()
         tmr += 1        
         clock.tick(100)
